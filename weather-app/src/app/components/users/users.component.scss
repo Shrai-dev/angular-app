@@ -1,0 +1,64 @@
+.wrapper {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & .card {
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+    background-color: #d5f2ff;
+    border: 1px solid #8a9da5;
+    border-radius: 10px;
+    text-align: center;
+
+    & .card__img {
+      margin-top: 15px;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+    }
+
+    & .card__name {
+      margin: 5px;
+      font-family: "Annie Use Your Telescope", cursive;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: 3px;
+    }
+
+    & .card__age,
+    .card__email,
+    .card__location {
+      margin: 5px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      line-height: 120%;
+      letter-spacing: 1px;
+    }
+
+    & .card__button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #d5f2ff;
+      border: 2px solid #1990c7;
+      border-radius: 5px;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #a3d4eb;
+      }
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  .wrapper {
+    margin: 0;
+    padding: 2px;
+  }
+}

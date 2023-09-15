@@ -1,0 +1,20 @@
+<div class="container">
+  <h2 class="header__title">Users</h2>
+
+  <div class="wrapper">
+    <div *ngFor="let user of users" class="card">
+      <div class="card__info">
+
+        <img class="card__img" src={{user.picture.large}} alt="photo">
+        <h2 class="card__name">{{user.name.first + ' ' + user.name.last}}</h2>
+        <p class="card__age">{{user.dob.age}} years</p>
+        <p class="card__email">{{user.email}}</p>
+        <p class="card__location">{{user.location.country}}<br>{{user.location.city}}</p>
+      </div>
+      <div class="card__weather">
+      </div>
+      <button (click)="saveUser(user)" class="card__button">Save</button>
+    </div>
+  </div>
+  <button (click)="showUsersInfo()" class="router__btn">Go to saved users</button>
+</div>
