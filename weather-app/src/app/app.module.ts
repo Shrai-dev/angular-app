@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UsersComponent } from './components/users/users.component';
-import { UsersInfoComponent } from './components/users-info/users-info.component';
+import { UsersComponent } from './components/users/users-list.component';
+import { UsersInfoComponent } from './components/users-info/users-saved-info.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({

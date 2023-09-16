@@ -4,8 +4,8 @@ import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-users-info',
-  templateUrl: './users-info.component.html',
-  styleUrls: ['./users-info.component.scss'],
+  templateUrl: './users-saved-info.component.html',
+  styleUrls: ['./users-saved-info.component.scss'],
 })
 export class UsersInfoComponent implements OnInit {
   savedUsers = AppComponent.favoriteUsers;

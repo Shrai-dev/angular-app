@@ -2,6 +2,7 @@
   <h2 class="header__title">Saved Users</h2>
 
   <div class="wrapper">
+    <h3 *ngIf="savedUsers.length === 0" class="title">There is no saved users</h3>
     <div *ngFor="let user of savedUsers" class="card">
       <div class="card__info">
 
